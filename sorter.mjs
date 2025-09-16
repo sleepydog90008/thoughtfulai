@@ -38,10 +38,10 @@ const sort = (width, height, length, mass) => {
  * @returns {boolean} true or false if the input is valid or not
  */
 const valid = (width, height, length, mass) => {
-  if (isNaN(parseFloat(mass)) === true) { return false }
-  if (isNaN(parseFloat(width)) === true) { return false }
-  if (isNaN(parseFloat(height)) === true) { return false }
-  if (isNaN(parseFloat(length)) === true) { return false }
+  if (isNaN(parseFloat(mass)) === true || mass <= 0) { return false }
+  if (isNaN(parseFloat(width)) === true || width <= 0) { return false }
+  if (isNaN(parseFloat(height)) === true || height <= 0) { return false }
+  if (isNaN(parseFloat(length)) === true || length <= 0) { return false }
 
   return true
 }
