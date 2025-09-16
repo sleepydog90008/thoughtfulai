@@ -13,8 +13,8 @@ When a package is considered both **heavy** (condition 3) and **bulky** (conditi
 Otherwise, the package is sorted to **STANDARD**.
 
 # How to Run the Test
-1. Ensure prerequisites exist (requires at least Node.js v20 since it uses the native test framework).  
-   Install Node.js (v20+)
+1. Download this repo (place in a directory of your choosing on your machine) and ensure prerequisites exist (requires at least Node.js v20 since it uses the native test framework).  
+   Install Node.js (v20+) -> https://nodejs.org/en/download/current
 
 2. In the root directory of this folder (either in your IDE terminal or something like command prompt), run
     > npm run test
@@ -29,4 +29,5 @@ Otherwise, the package is sorted to **STANDARD**.
     > npm run fixcoverage
 
 Note: if you have any issues with standard (#4), then be sure to run this command first from any terminal:
+
 > npm install -g standard
