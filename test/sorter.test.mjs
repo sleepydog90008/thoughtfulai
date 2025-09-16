@@ -9,6 +9,22 @@ const expected = {
 }
 
 /**
+ * Test for negatives (not allowed)
+ */
+test('Negative not allowed', () => {
+  const result = sorter.sort(-5, -3, -6, -13)
+  assert.equal(result, expected.rejected)
+})
+
+/**
+ * Test for 0 (not allowed)
+ */
+test('Zeros not allowed', () => {
+  const result = sorter.sort(0, 0, 0, 0)
+  assert.equal(result, expected.rejected)
+})
+
+/**
  * Test param width is invalid
  */
 test('Invalid width', () => {
